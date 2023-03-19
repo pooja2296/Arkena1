@@ -1,0 +1,90 @@
+<div class="profile-outer">
+  <div class="profile-card">
+    <mat-card class="example-card">
+      <!-- <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Shiba Inu</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header> -->
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+
+
+      </mat-card-header>
+      <mat-card-content class="content">
+        <mat-card-title>Jone Smith</mat-card-title>
+        <mat-card-subtitle>CFA, CIC</mat-card-subtitle>
+        <div>
+          Premium member
+        </div>
+        <br>
+        <div class="school">
+          <mat-icon>school</mat-icon>Insurance Agent, Attorney, Accountants
+        </div>
+        <br>
+
+        <mat-divider></mat-divider>
+
+
+      </mat-card-content>
+      <mat-card-actions>
+        <div class="content1">
+          <mat-icon>email</mat-icon>Send an Email
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="profile-details">
+    <mat-card class="user-details-card">
+      <div class="user-details-inner">
+        <mat-card-header class="business-custom-header">
+
+          <mat-card-title>Business Details</mat-card-title>
+        </mat-card-header>
+        <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+
+        <mat-card-content class="user-details">
+          <div class="user-inner">
+            <mat-card-title class="custom-title">
+              <mat-icon>person</mat-icon>Profile
+              <button mat-raised-button color="warn" (click)="onEditProfile()">Edit Profile
+
+              </button>
+            </mat-card-title>
+            <mat-divider></mat-divider>
+            <div class="flex">
+              <div class="custom-label"> Name:</div>
+              <div class="custom-sublabel">{{profileData.name}}</div>
+            </div>
+            <div class="flex">
+              <div class="custom-label"> Domain:</div>
+              <div class="custom-sublabel">www.mjhattorenys.com</div>
+            </div>
+
+            <div class="flex">
+              <div class="custom-label"> Gender:</div>
+              <div class="custom-sublabel">Male</div>
+            </div>
+            <div class="flex">
+              <div class="custom-label"> Date of Birth:</div>
+              <div class="custom-sublabel">8th June 1979</div>
+            </div>
+            <div class="flex">
+              <div class="custom-label"> Phone Number:</div>
+              <div class="custom-sublabel">+8654321234</div>
+            </div>
+            <div class="flex">
+              <div class="custom-label"> Location:</div>
+              <div class="custom-sublabel">12 street, Silicon Valley, Avenue NE, Huntsville</div>
+            </div>
+          </div>
+        </mat-card-content>
+      </div>
+
+
+
+
+    </mat-card>
+
+  </div>
+</div>

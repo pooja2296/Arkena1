@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .header {
+    display: flex;
+    column-gap: 70px;
+    .mat-icon-button {     
+        width: auto !important;
+    }
+    .example-header-image {
+        background-image: url(https://material.angular.io/assets/img/examples/shiba1.jpg);
+        background-size: cover;
+        max-width: 40px;
+        height: 40px;
+    }
+    
+}
+.spaceheader{
+    column-gap: 40px !important;
+}

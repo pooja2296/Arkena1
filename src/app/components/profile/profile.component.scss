@@ -1,0 +1,98 @@
+.profile-outer {
+    display: flex;
+    padding: 10px 6%;
+    row-gap: 14px;
+    column-gap: 25px;
+
+    .profile-card {
+        width: 30%;
+
+        .example-header-image {
+            background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+            background-size: cover;
+
+            width: 100%;
+            max-width: 170px;
+            height: 170px;
+            margin: 20px auto;
+        }
+    }
+
+    .profile-details {
+        width: 70%;
+        .business-custom-header {
+            background: beige;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            padding: 8px;
+        }
+        .custom-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            margin-bottom: 15px;
+        }
+        .user-details {
+            padding: 16px;
+            
+        }
+        .user-inner {
+            border: 1px solid #ddd;
+            padding: 16px;
+            margin: 15px;
+            .mat-flat-button.mat-warn, .mat-raised-button.mat-warn, .mat-fab.mat-warn, .mat-mini-fab.mat-warn {
+                color: white;
+                margin-left: auto;
+            }
+        }
+        .flex {
+            display: flex;
+            column-gap: 10px;
+            margin: 15px 0;
+            .custom-label {
+                width: 30%;
+            }
+            .custom-sublabel {
+                width: 70%;
+            }
+           
+        }
+    }
+   
+}
+
+.content{
+    text-align: center;
+}
+
+.content1{
+    color: red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.school{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .profile-outer {
+        flex-wrap: wrap;
+        .profile-card {
+            width: 100%;
+        }
+        .profile-details {
+            width: 100%;
+        }
+    }
+  }

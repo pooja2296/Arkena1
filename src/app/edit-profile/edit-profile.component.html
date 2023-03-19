@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Edit Profile</h1>
+<div mat-dialog-content>
+  <!-- <p>What's your favorite animal?</p> -->
+  <form [formGroup]="profileForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter your name" name="name" formControlName="name" required class="form-control">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Domain</mat-label>
+      <input matInput placeholder="Enter your domain" name="domain" formControlName="domain" required
+        class="form-control">
+    </mat-form-field>
+    <br>
+    <mat-radio-group name="opList" formControlName="gender">
+      <mat-radio-button *ngFor="let gender of genderOptions"  name="opList" [value]="gender" >{{ gender}}</mat-radio-button>
+    </mat-radio-group>
+  
+    <br>
+    <br> 
+    <mat-form-field appearance="outline">
+      <mat-label>Date of Birth</mat-label>
+      <input matInput [matDatepicker]="picker" name="dob" formControlName="dob" required class="form-control">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Phone number</mat-label>
+      <input matInput placeholder="Enter your phone number" name="phone" formControlName="pnumber" required
+        class="form-control">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Location</mat-label>
+      <textarea matInput placeholder="Enter your location" name="location" formControlName="location" required
+        class="form-control"></textarea>
+    </mat-form-field>
+
+
+  </form>
+</div>
+<div mat-dialog-actions class="action-custom-buttons">
+  <button mat-raised-button color="basic" (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+</div>
